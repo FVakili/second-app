@@ -1,0 +1,15 @@
+<div class="crop"
+    [style.width.px]="starWidth"
+    [title]="rating">
+    <ng-content></ng-content>
+  <div style= "width:86px"
+      (click)= "onStarclicked()">
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+  </div>
+</div>
+<p>This paragraph is from Star</p>
+

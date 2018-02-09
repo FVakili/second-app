@@ -1,0 +1,11 @@
+<app-about [title]="message"></app-about>
+<app-star *ngFor=" let r of ratings" [starRating]="r"
+            (starClicked)="onClick($event)">
+            <p>Extera Contents</p>
+
+</app-star>
+<input type="text" #nameInputfield>
+<h1>{{name}}</h1>
+<button (click)= "buttonClick()" >apply Name</button>
+<!--<p>This paragraph is from home</p>-->
+<h2 *ngIf="eventOutput != null">{{eventOutput.name + " " +eventOutput.age +" "+ eventOutput.school}}</h2>
